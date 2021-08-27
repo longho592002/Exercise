@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shopeee</title>
+    <title>NHL Shop</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="./assets/css/base.css">
     <link rel="stylesheet" href="./assets/css/main.css">
@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
     <link rel="stylesheet" href="./assets/img/themify-icons/themify-icons.css">
 </head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <style>
     /* Scrollbar  */
     .scrollbar {
@@ -51,8 +52,6 @@ style-scrollbar::-webkit-scrollbar-thumb:hover {
 
 </style>
 <body>
-    
-
         <div class="app">
             <header class="header">
                 <div class="grid">
@@ -256,7 +255,7 @@ style-scrollbar::-webkit-scrollbar-thumb:hover {
                                     <span class="header__cart-number-product">3</span>
                                 </a>
                                 <!-- No cart: header__cart-list--no-cart -->
-                                <div class="header__cart-list">
+                                <div class="header__cart-list header__cart-list--no-cart">
                                     <img src="./assets/img/giohangtrong.png"  class="header__cart-no-cart-img" alt="">
                                     <p class="header__cart-no-cart-title">Chưa có sản phẩm</p>
 
@@ -443,6 +442,51 @@ style-scrollbar::-webkit-scrollbar-thumb:hover {
                 </div>
             </header>
         
+            <div class="grid">
+                <div class="grid_row">
+                    <div class="slide-show">
+                        <div class="slides">
+                            <ul class="control-slide">
+                                <li class="btn-control-slide"></li>
+                                <li class="btn-control-slide"></li>
+                                <li class="btn-control-slide"></li>
+                                <li class="btn-control-slide"></li>
+                                <li class="btn-control-slide"></li>
+                            </ul>
+
+                            <div class="slide s1 slide-active">
+                                <a href="" >
+                                    <img src="https://fptshop.com.vn/Uploads/Originals/2021/8/27/637656523649199794_F_H1_800x300.png" class="img-slide-show" alt="">
+                                </a>
+                            </div>
+
+                            <div class="slide">
+                                <a href="" >
+                                    <img src="https://fptshop.com.vn/Uploads/Originals/2021/7/25/637628469484259700_F_H1_800x300.png"  class="img-slide-show" alt="">
+                                </a>
+                            </div>
+                            
+                            <div class="slide">
+                                <a href="">
+                                    <img src="https://fptshop.com.vn/Uploads/Originals/2021/8/16/637647017737177686_F-H1_800x300.png"  class="img-slide-show" alt="">
+                            </div>
+                            
+                            <div class="slide">
+                                <a href="" >
+                                    <img src="https://fptshop.com.vn/Uploads/Originals/2021/7/31/637633241066289329_F_H1_800x300.png"  class="img-slide-show" alt="">
+                            </div>
+
+                            <div class="slide">
+                                <a href="">
+                                    <img src="https://fptshop.com.vn/Uploads/Originals/2021/8/4/637636966105432319_F-H1_800x300.png" class="img-slide-show"  alt="">
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
             <div class="app__container">
                 <div class="grid">
                     <div class="grid__row app_content">

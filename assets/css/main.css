@@ -782,6 +782,92 @@ html {
 .header__cart-view-cart:hover {
     background-color: #f05d41;
 }
+
+/* Slide Show  */
+.slide-show {
+    position: relative;
+    width: 100%;
+    padding-top: 20px;
+    /* background-color: #020081; */
+    overflow: hidden;
+    
+}
+.slides {
+    width: 500%;
+    height: 100%;
+    display: flex;
+}
+.slide {
+    width: 100%;
+    transition: 0.6s;
+    opacity: 0;
+    visibility: hidden;
+}
+.control-slide {
+    display: flex;
+    position: absolute;
+    width: 150px;
+    bottom: 12px;
+    left: 43%;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 10;
+    
+}
+.btn-control-slide {
+    width: 16px;
+    height: 16px;
+    background-color: red;
+    opacity: 0.6;
+    list-style: none;
+    border-radius: 50%;
+    cursor: pointer;
+
+}
+.slide-active {
+    opacity: 1;
+    visibility: visible;
+}
+.navigation {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+.bar {
+    width: 20px;
+    height: 20px;
+    border-radius: 30px;
+    border: 2px solid #fff;
+    margin: 10px;
+    cursor: pointer;
+}
+.img-slide-show {
+    width: 100%;
+}
+.bar:hover {
+    background-color: #fff;
+    transition: 0.6s;
+    border: 2px solid red;
+}
+
+#bottom_1:checked ~ .s1 {
+    margin-left: 0;
+}
+#bottom_2:checked ~ .s1 {
+    margin-left: 0;
+}
+#bottom_3:checked ~ .s1 {
+    margin-left: 0;
+}
+#bottom_4:checked ~ .s1 {
+    margin-left: 0;
+}
+#bottom_5:checked ~ .s1 {
+    margin-left: 0;
+}
+
 /* App Container  */
 .app__container {
     background-color: #f5f5f5;
