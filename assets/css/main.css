@@ -788,14 +788,14 @@ html {
     position: relative;
     width: 100%;
     padding-top: 20px;
-    /* background-color: #020081; */
+    background-color: #020081;
     overflow: hidden;
-    
 }
 .slides {
     width: 500%;
     height: 100%;
     display: flex;
+    z-index: -1;
 }
 .slide {
     width: 100%;
@@ -803,70 +803,78 @@ html {
     opacity: 0;
     visibility: hidden;
 }
-.control-slide {
-    display: flex;
-    position: absolute;
-    width: 150px;
-    bottom: 12px;
-    left: 43%;
-    align-items: center;
-    justify-content: space-around;
-    z-index: 10;
-    
-}
-.btn-control-slide {
-    width: 16px;
-    height: 16px;
-    background-color: red;
-    opacity: 0.6;
-    list-style: none;
-    border-radius: 50%;
-    cursor: pointer;
-
-}
 .slide-active {
     opacity: 1;
     visibility: visible;
 }
-.navigation {
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-}
-.bar {
-    width: 20px;
-    height: 20px;
-    border-radius: 30px;
-    border: 2px solid #fff;
-    margin: 10px;
-    cursor: pointer;
-}
 .img-slide-show {
     width: 100%;
 }
-.bar:hover {
-    background-color: #fff;
-    transition: 0.6s;
-    border: 2px solid red;
+.control-slide-show span {
+    color: var(--white-color);
+    font-size: 80px;
+    opacity: 0.6;
 }
+.control-slide--left {
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    z-index:100;
+    cursor: pointer;
+}
+.control-slide--right {
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    z-index:12;
+    cursor: pointer; 
+ } 
+ .control-slide-navigation {
+    position: absolute;
+    z-index: 10;
+    width: 140px;
+    bottom: 16px;
+    left: 50%;
+    margin-left: -70px;
+    display: flex;
+    justify-content: space-between;
+}
+.control-slide-btn {
+    width: 16px;
+    height: 16px;
+    background-color: var(--white-color);
+    opacity: 0.6;
+    list-style: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.remove-slide-left {
+    animation: remove-slide-left 1s forwards;
+}
+@keyframes remove-slide-left{
+    from{
+        transform: translateX(0%);
+    }
+    to{
+        transform: translateX(100%);
+        
+    }
+}
+.slide-go-right {
+    animation: slide-go-right 1s forwards;
+}
+@keyframes slide-go-right{
+    from{
+        transform: translateX(-100%);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+.go-right {
 
-#bottom_1:checked ~ .s1 {
-    margin-left: 0;
-}
-#bottom_2:checked ~ .s1 {
-    margin-left: 0;
-}
-#bottom_3:checked ~ .s1 {
-    margin-left: 0;
-}
-#bottom_4:checked ~ .s1 {
-    margin-left: 0;
-}
-#bottom_5:checked ~ .s1 {
-    margin-left: 0;
-}
+} 
+
 
 /* App Container  */
 .app__container {
