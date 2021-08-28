@@ -52,6 +52,9 @@ style-scrollbar::-webkit-scrollbar-thumb:hover {
 }
 
 </style>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.3/umd/popper.min.js" ></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" ></script>
+<script src="./assets/JS/script.js"></script>
 <body>
         <div class="app">
             <header class="header">
@@ -256,7 +259,7 @@ style-scrollbar::-webkit-scrollbar-thumb:hover {
                                     <span class="header__cart-number-product">3</span>
                                 </a>
                                 <!-- No cart: header__cart-list--no-cart -->
-                                <div class="header__cart-list header__cart-list--no-cart">
+                                <div class="header__cart-list">
                                     <img src="./assets/img/giohangtrong.png"  class="header__cart-no-cart-img" alt="">
                                     <p class="header__cart-no-cart-title">Chưa có sản phẩm</p>
 
@@ -448,36 +451,9 @@ style-scrollbar::-webkit-scrollbar-thumb:hover {
                     <div class="slideshow-container">
                             
                         <div class="slides">
-                            <div class="slide slide-active">
-                                <a href="https://www.facebook.com/profile.php?id=100015691787745" >
-                                    <img src="https://fptshop.com.vn/Uploads/Originals/2021/8/27/637656523649199794_F_H1_800x300.png" class="img-slide-show" alt="">
-                                </a>
-                            </div>
-
-                            <div class="slide">
-                                <a href="https://www.facebook.com/profile.php?id=100015691787745" >
-                                    <img src="https://fptshop.com.vn/Uploads/Originals/2021/7/25/637628469484259700_F_H1_800x300.png"  class="img-slide-show" alt="">
-                                </a>
-                            </div>
-                            
-                            <div class="slide">
-                                <a href="https://www.facebook.com/profile.php?id=100015691787745">
-                                    <img src="https://fptshop.com.vn/Uploads/Originals/2021/8/16/637647017737177686_F-H1_800x300.png"  class="img-slide-show" alt="">
-                            </div>
-                            
-                            <div class="slide">
-                                <a href="https://www.facebook.com/profile.php?id=100015691787745" >
-                                    <img src="https://fptshop.com.vn/Uploads/Originals/2021/7/31/637633241066289329_F_H1_800x300.png"  class="img-slide-show" alt="">
-                            </div>
-
-                            <div class="slide">
-                                <a href="https://www.facebook.com/profile.php?id=100015691787745">
-                                    <img src="https://fptshop.com.vn/Uploads/Originals/2021/8/4/637636966105432319_F-H1_800x300.png" class="img-slide-show"  alt="">
-                            </div>
-
                             <div class="control-slide-show">
-                                <span class="control-slide--left"><i class="fas fa-chevron-left"></i></span>
-                                <span class="control-slide--right"><i class="fas fa-chevron-right"></i></span>
+                                <span id="control-slide--left"><i class="fas fa-chevron-left"></i></span>
+                                <span id="control-slide--right"><i class="fas fa-chevron-right"></i></span>
                                 <ul class="control-slide-navigation">
                                     <li class="control-slide-btn"></li>
                                     <li class="control-slide-btn"></li>
@@ -486,6 +462,35 @@ style-scrollbar::-webkit-scrollbar-thumb:hover {
                                     <li class="control-slide-btn"></li>
                                 </ul>
                             </div>
+
+                            <div class="slide slide-active">
+                                <a href="https://www.facebook.com/profile.php?id=100015691787745" class="slide-show-link" >
+                                    <img src="https://fptshop.com.vn/Uploads/Originals/2021/8/27/637656523649199794_F_H1_800x300.png" class="img-slide-show" alt="">
+                                </a>
+                            </div>
+
+                            <div class="slide">
+                                <a href="https://www.facebook.com/profile.php?id=100015691787745" class="slide-show-link"  >
+                                    <img src="https://fptshop.com.vn/Uploads/Originals/2021/7/25/637628469484259700_F_H1_800x300.png"  class="img-slide-show" alt="">
+                                </a>
+                            </div>
+                            
+                            <div class="slide">
+                                <a href="https://www.facebook.com/profile.php?id=100015691787745" class="slide-show-link" >
+                                    <img src="https://fptshop.com.vn/Uploads/Originals/2021/8/16/637647017737177686_F-H1_800x300.png"  class="img-slide-show" alt="">
+                            </div>
+                            
+                            <div class="slide">
+                                <a href="https://www.facebook.com/profile.php?id=100015691787745"  class="slide-show-link" >
+                                    <img src="https://fptshop.com.vn/Uploads/Originals/2021/7/31/637633241066289329_F_H1_800x300.png"  class="img-slide-show" alt="">
+                            </div>
+
+                            <div class="slide">
+                                <a href="https://www.facebook.com/profile.php?id=100015691787745" class="slide-show-link" >
+                                    <img src="https://fptshop.com.vn/Uploads/Originals/2021/8/4/637636966105432319_F-H1_800x300.png" class="img-slide-show"  alt="">
+                            </div>
+
+                           
                     </div>
                 </div>
             </div>
@@ -2362,7 +2367,7 @@ style-scrollbar::-webkit-scrollbar-thumb:hover {
                     </div>
                  </div>
             </div> 
-            <script type="text/javascript" src="../Exercise/assets/JS/script.js" ></script>
+          
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
             
             <!-- <script>
