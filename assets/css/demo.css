@@ -6,9 +6,10 @@ html {
     box-sizing: border-box;
 }
 .khoi-slide {
-    width: 100%;
+    width: 1200px;
     height: 700px;
     position: relative;
+    margin: auto;
  }
  img {
     width: 100%;
@@ -19,6 +20,7 @@ html {
     overflow: hidden;
  }
  .slide {
+    margin: auto;
     position: absolute;
     top: 0px;
     left: 0px;
@@ -30,9 +32,13 @@ html {
     visibility: visible;
  }
  .nut-slide span{
-    color: white;
+    color: violet;
     font-size: 60px;
     opacity: 0.6;
+ }
+ .slide-img {
+    max-width: 1200px;
+    min-width: 1200px;  
  }
  span#btn-prev{
     position: absolute;
@@ -53,7 +59,7 @@ html {
     z-index: 10;
     width: 150px;
     bottom: 25%;
-    left: 50%;
+    left: 45%;
     margin-left: -50px;
     display: flex;
     justify-content: space-between;
@@ -61,7 +67,7 @@ html {
  .nut-slide ul li {
     width: 20px;
     height: 20px;
-    background: white;
+    background: red;
     opacity: 0.6;
     list-style: none;
     border-radius: 50%;
