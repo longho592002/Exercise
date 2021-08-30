@@ -5,6 +5,9 @@ html {
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
 }
+.new-color {
+    background-color: #020081;
+}
 .m-l-3 {
     margin-left: 3px;
 }
@@ -783,101 +786,122 @@ html {
     background-color: #f05d41;
 }
 
-/* Slide Show  */
-.slideshow-container {
-    position: relative;
+/* Count-down-sale */
+.count-down-sale-wrapper {
+    padding-top: 20px;
     width: 100%;
-    padding-top: 50px;
-    /* background-color: #020081; */
-    overflow: hidden;
+    background-color: var(--new-color);
 }
-.slides {
-    width: 500%;
-    height: 100%;
+.count-down-sale {
+    width: 100%;
     display: flex;
-    z-index: -1;
-}
-.slide {
-    width: 100%;
-    transition: 0.6s;
-    opacity: 0;
-    visibility: hidden;
-}
-.slide-active {
-    opacity: 1;
-    visibility: visible;
-}
-.slide-show-link {
-    z-index: 1;
-}
-.img-slide-show {
-    width: 100%;
-}
-.control-slide-show span {
-    color: var(--white-color);
-    font-size: 80px;
-    opacity: 0.6;
-}
-#control-slide--left {
-    position: absolute;
-    top: 50%;
-    left: 0%;
-    z-index:100;
-    cursor: pointer;
-}
-#control-slide--right {
-    position: absolute;
-    top: 50%;
-    right: 0%;
-    z-index:12;
-    cursor: pointer; 
- } 
- .control-slide-navigation {
-    position: absolute;
-    z-index: 10;
-    width: 140px;
-    bottom: 16px;
-    left: 50%;
-    margin-left: -70px;
-    display: flex;
-    justify-content: space-between;
-}
-.control-slide-btn {
-    width: 16px;
-    height: 16px;
-    background-color: var(--white-color);
-    opacity: 0.6;
-    list-style: none;
-    border-radius: 50%;
-    cursor: pointer;
-}
-.remove-slide-left {
-    animation:  remove-slide-left 1s forwards;
-}
-@-webkit-keyframes remove-slide-left{
-    from {
-        transform: translateX(0%);
-    }
-    to {
-        transform: translateX(100%);
-    }
-}
-.go-to-right {
-    animation:  go-to-right 1s forwards;
-}
-@-webkit-keyframes go-to-right{
-    from {
-        transform: translateX(-100%);
-    }
-    to {
-        transform: translateX(0%);
-    }
+    justify-content: center ;
 }
 
+/* Slide Show  */
+
+.slider-wrapper {
+    width: 100%;
+    background-color: var(--new-color);
+    padding-top: 28px ;
+}
+ .slider {
+    width: 1200px;
+    height: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+ }
+ .slides {
+    width: 500%;
+    height: 500px;
+    display: flex;
+ }
+ .slides input {
+    display: none;
+ }
+ .slide {
+    width: 20%;
+    transition: 2s;
+ }
+ .slide img {
+    width: 1200px;
+    height: 500px;
+ }
+    /* CSS for manual slide navigation  */
+ .navigation-manual {
+    position: absolute;
+    width:1200px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;   
+ }
+ .manual-btn {
+    border: 2px solid #40d3dc;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+ }
+ .manual-btn:not(:last-child) {
+    margin-right: 40px;
+ }
+ .manual-btn:hover {
+    background-color: #40d3dc;
+ }
+ #radio1:checked ~ .first {
+    margin-left: 0;
+ }
+ #radio2:checked ~ .first {
+    margin-left: -20%;
+ }
+ #radio3:checked ~ .first {
+    margin-left: -40%;
+ }
+ #radio4:checked ~ .first {
+    margin-left: -60%;
+ }
+ #radio5:checked ~ .first {
+    margin-left: -80%;
+ }
+    /* CSS for automatic navigation  */
+ .navigation-auto {
+    width: 1200px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    margin-top: 460px;
+ }
+ .navigation-auto div {
+    border: 2px solid #40d3dc;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+ }
+ 
+ .navigation-auto div:not(:last-child) {
+    margin-right: 40px;
+ 
+ }
+ #radio1:checked ~ .navigation-auto .auto-btn1 {
+    background-color: #40d3dc;
+ }
+ #radio2:checked ~ .navigation-auto .auto-btn2 {
+    background-color: #40d3dc;
+ }
+ #radio3:checked ~ .navigation-auto .auto-btn3 {
+    background-color: #40d3dc;
+ }
+ #radio4:checked ~ .navigation-auto .auto-btn4 {
+    background-color: #40d3dc;
+ }
+ #radio5:checked ~ .navigation-auto .auto-btn5 {
+    background-color: #40d3dc;
+ }
+ 
 
 /* App Container  */
 .app__container {
-    background-color: #f5f5f5;
+    background-color: var(--new-color);
 }
 .app_content {
     padding-top: 28px;

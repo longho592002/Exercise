@@ -446,53 +446,79 @@ style-scrollbar::-webkit-scrollbar-thumb:hover {
                 </div>
             </header>
         
-            <div class="grid">
-                <div class="grid_row">
-                    <div class="slideshow-container">
+            <div class="count-down-sale-wrapper">
+                <div class="grid">
+                    <div class="grid__row">
+                        <div class="count-down-sale">
+                            <img src="https://fptshop.com.vn/Uploads/images/2015/giasoccuoituan/Tt9-title-top-destop.png" alt="" class="count-down-sale-img">
                             
-                        <div class="slides">
-                            <div class="control-slide-show">
-                                <span id="control-slide--left"><i class="fas fa-chevron-left"></i></span>
-                                <span id="control-slide--right"><i class="fas fa-chevron-right"></i></span>
-                                <ul class="control-slide-navigation">
-                                    <li class="control-slide-btn"></li>
-                                    <li class="control-slide-btn"></li>
-                                    <li class="control-slide-btn"></li>
-                                    <li class="control-slide-btn"></li>
-                                    <li class="control-slide-btn"></li>
-                                </ul>
-                            </div>
-
-                            <div class="slide slide-active">
-                                <a href="https://www.facebook.com/profile.php?id=100015691787745" class="slide-show-link" >
-                                    <img src="https://fptshop.com.vn/Uploads/Originals/2021/8/27/637656523649199794_F_H1_800x300.png" class="img-slide-show" alt="">
-                                </a>
-                            </div>
-
-                            <div class="slide">
-                                <a href="https://www.facebook.com/profile.php?id=100015691787745" class="slide-show-link"  >
-                                    <img src="https://fptshop.com.vn/Uploads/Originals/2021/7/25/637628469484259700_F_H1_800x300.png"  class="img-slide-show" alt="">
-                                </a>
-                            </div>
-                            
-                            <div class="slide">
-                                <a href="https://www.facebook.com/profile.php?id=100015691787745" class="slide-show-link" >
-                                    <img src="https://fptshop.com.vn/Uploads/Originals/2021/8/16/637647017737177686_F-H1_800x300.png"  class="img-slide-show" alt="">
-                            </div>
-                            
-                            <div class="slide">
-                                <a href="https://www.facebook.com/profile.php?id=100015691787745"  class="slide-show-link" >
-                                    <img src="https://fptshop.com.vn/Uploads/Originals/2021/7/31/637633241066289329_F_H1_800x300.png"  class="img-slide-show" alt="">
-                            </div>
-
-                            <div class="slide">
-                                <a href="https://www.facebook.com/profile.php?id=100015691787745" class="slide-show-link" >
-                                    <img src="https://fptshop.com.vn/Uploads/Originals/2021/8/4/637636966105432319_F-H1_800x300.png" class="img-slide-show"  alt="">
-                            </div>
-
-                           
+                        </div>
                     </div>
                 </div>
+            </div>
+
+
+            <div class="slider-wrapper ">
+                <div class="grid">
+                    <div class="grid_row">
+                        <div class="slider">
+                            <div class="slides">
+                               <!-- radio button  -->
+                               <input type="radio" name="radio-btn" id="radio1">
+                               <input type="radio" name="radio-btn" id="radio2">
+                               <input type="radio" name="radio-btn" id="radio3">
+                               <input type="radio" name="radio-btn" id="radio4">
+                               <input type="radio" name="radio-btn" id="radio5">
+                      
+                               <!-- slide -image  -->
+                               <div class="slide first">
+                                  <a href="#" target="blank">
+                                     <img src="https://fptshop.com.vn/Uploads/Originals/2021/8/27/637656523649199794_F_H1_800x300.png" alt="">
+                                  </a>
+                               </div>
+                               <div class="slide">
+                                  <a href="#">
+                                     <img src="https://fptshop.com.vn/Uploads/Originals/2021/7/25/637628469484259700_F_H1_800x300.png" alt="">
+                                  </a>
+                               </div>
+                               <div class="slide">
+                                  <a href="#"> 
+                                     <img src="https://fptshop.com.vn/Uploads/Originals/2021/8/16/637647017737177686_F-H1_800x300.png" alt="">
+                                  </a>
+                               </div>
+                               <div class="slide">
+                                  <a href="#"> 
+                                     <img src="https://fptshop.com.vn/Uploads/Originals/2021/7/31/637633241066289329_F_H1_800x300.png" alt="">
+                                  </a>
+                               </div>
+                               <div class="slide">
+                                  <a href="#">
+                                     <img src="https://fptshop.com.vn/Uploads/Originals/2021/8/4/637636966105432319_F-H1_800x300.png" alt="">
+                                  </a>
+                               </div>
+                      
+                               <!-- automatic navigation  -->
+                               <div class="navigation-auto">
+                                  <div class="auto-btn1"></div>
+                                  <div class="auto-btn2"></div>
+                                  <div class="auto-btn3"></div>
+                                  <div class="auto-btn4"></div>
+                                  <div class="auto-btn5"></div>
+                               </div>
+                               <!-- manual navigation   -->
+                            
+                            </div>
+                               <!-- manual navigation   -->
+                            <div class="navigation-manual">
+                               <label for="radio1" class="manual-btn"></label>
+                               <label for="radio2" class="manual-btn"></label>
+                               <label for="radio3" class="manual-btn"></label>
+                               <label for="radio4" class="manual-btn"></label>
+                               <label for="radio5" class="manual-btn"></label>
+                            </div>
+                         </div>
+                </div>
+
             </div>
         </div>
 
@@ -2369,7 +2395,17 @@ style-scrollbar::-webkit-scrollbar-thumb:hover {
             </div> 
           
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-            
+            <script type="text/javascript">
+                var counter = 1;
+                setInterval(function(){
+                   document.getElementById('radio' + counter).checked = true;
+                   counter++;
+                   if(counter > 5) {
+                      counter = 1;
+                   }
+                },4500);
+             </script>
+          
             <!-- <script>
                 const Register = document.querySelector('.js-Register')
                 const Login = document.querySelector('.js-Login')
