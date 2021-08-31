@@ -824,23 +824,113 @@ html {
     color: #fff;
     text-transform: uppercase;
 }
-.nav-menu-item-sub {
+
+.nav-menu-item-sub-wrapper {
     position: absolute;
     background-color: #fff;
     height: 270px;
 }
+.nav-menu-item-sub {
+    display: flex;
+}
 .nav-menu-first-sub {
     padding-left: 20px;
     max-width: 396px;
+    border-right: 1px solid #ccc ;
+    padding-bottom: 13px;
 }
 .menu-sub-list {
     display: flex;
-    justify-content: space-evenly;
     flex-wrap: wrap;
+}
+.menu-sub-heading {
+    font-size: 1.4rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    height: 40px;
+    color: #3d3d3d;
 }
 .menu-sub-item {
     list-style: none;
-    padding-right: 20px;
+    width: 33%;
+    line-height: 30px;
+    font-size: 1.3rem;
+}
+.menu-sub-item a:hover {
+    color: #000;
+}
+
+.menu-sub-item a {
+    text-decoration: none;
+    color: #3d3d3d;
+}
+.nav-menu-second-sub {
+    padding-left:12px;
+    width: 180px;
+    border-right: 1px solid #ccc ;
+}
+.menu-sub-list-price {
+    list-style: none;
+    line-height: 30px;
+    font-size: 1.4rem;
+}
+.menu-sub-item-price a {
+    text-decoration: none;
+    color: #3d3d3d;
+}
+.menu-sub-item-price a:hover {
+    color: #000;
+}
+.nav-menu-last-sub {
+    display: flex;
+    padding-left: 12px;
+}
+.nav-menu-sub-selling {
+    width: 260px;
+}
+.menu-sub-product1 {
+    height: 80px;
+    display: flex;
+    margin-bottom: 20px;
+}
+.menu-sub-product1-info {
+    display: block;
+    padding-left: 12px!important;
+    line-height: 24px;
+    font-size: 1.4rem;
+}
+.menu-sub-product1-img {
+
+    width: 80px;
+    height: 80px;
+}
+.menu-sub-product1-price {
+    color: #d0021b;
+    font-weight: 600;
+}
+.menu-sub-product2 {
+    height: 80px;
+    display: flex   ;
+}
+.menu-sub-product2-info {
+    display: block;
+    padding-left: 12px!important;
+    line-height: 24px;
+    font-size: 1.4rem;
+}
+.menu-sub-product2-img {
+    width: 80px;
+    height: 80px;
+}
+.menu-sub-product2-price {
+    color: #d0021b;
+    font-weight: 600;
+}
+.nav-menu-sub-advertise {
+    flex: 1;
+    display: flex;
+    margin: auto;
+    padding-left: 100px;
 }
 /* Slide Show  */
 
