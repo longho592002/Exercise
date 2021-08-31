@@ -8,7 +8,7 @@ body {
    align-items: center;
    background-color: #23E3C9;
 }
-.slider {
+/* .slider {
    width: 1200px;
    height: 500px;
    border-radius: 10px;
@@ -29,9 +29,9 @@ body {
 .slide img {
    width: 1200px;
    height: 500px;
-}
+} */
    /* CSS for manual slide navigation  */
-.navigation-manual {
+/* .navigation-manual {
    position: absolute;
    width:1200px;
    margin-top: -40px;
@@ -65,9 +65,9 @@ body {
 }
 #radio5:checked ~ .first {
    margin-left: -80%;
-}
+} */
    /* CSS for automatic navigation  */
-.navigation-auto {
+/* .navigation-auto {
    width: 1200px;
    position: absolute;
    display: flex;
@@ -99,4 +99,11 @@ body {
 }
 #radio5:checked ~ .navigation-auto .auto-btn5 {
    background-color: #40d3dc;
+} */
+h2 {
+   font-size: 5rem;
+   font-weight: bold;
+}
+.coming-soon {
+   min-height: 100vh;
 }

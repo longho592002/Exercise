@@ -763,7 +763,6 @@ html {
     font-size: 1.3rem;
     color: #888;
     margin-right: 8px;
-
 }
 .header__cart-item-body {
     display: flex;
@@ -773,7 +772,7 @@ html {
 .header__cart-item-delete {
     margin-right: 8px;
     font-size: 1.3rem;
-    color: vảr(--text-color);
+    color: var(--text-color);
 }
 .header__cart-item-delete:hover {
     color: var(--primary-color);
@@ -818,21 +817,36 @@ html {
 }
 .nav-menu-item-icon {
     color: #fff;
+    font-size: 1.8rem;
 }
 .nav-menu-item-link {
+    padding-right: 20px;
     text-decoration: none;
     color: #fff;
     text-transform: uppercase;
+    padding: 14px 0;
+}
+.nav-menu-item-link:hover {
+    opacity: 0.8;
 }
 .nav-menu-item:hover .nav-menu-item-sub-wrapper {
     display: block;
 }
 /* nav menu sub  */
+.nav-menu-item-sub--laptop {
+    margin-left: -126px;
+}
+.nav-menu-item-sub--apple{
+    margin-left: -240px;
+}
+.nav-menu-item-sub--accessory {
+    margin-left: -606px;
+}
 .nav-menu-item-sub-wrapper {
     position: absolute;
     height: 270px;
-    z-index: 50;
     display: none;      
+    margin-top: 1px;
     animation: FadeIn ease .6s;
 }
 .nav-menu-item-sub {
