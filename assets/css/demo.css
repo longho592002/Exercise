@@ -101,9 +101,32 @@ body {
    background-color: #40d3dc;
 } */
 h2 {
-   font-size: 5rem;
+   font-size: 3rem;
    font-weight: bold;
+   padding: 3rem;
 }
 .coming-soon {
    min-height: 100vh;
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   justify-content: center;
+}
+.countdown {
+   display: flex;
+   justify-content: space-around;
+   text-align: center;
+}
+.day,
+.hour, 
+.minute, 
+.second {
+   font-size: 2rem;
+}
+.waiting {
+   height: 50vh;
+}
+img {
+   width: 300px;
+   
 }
