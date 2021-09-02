@@ -5,11 +5,11 @@
     --star-gold:#ffce3d;
     --new-color:#020081;
     /* --primary-color: rgb(9, 230, 9); */
-    --primary-color: #ff6533;
+    --primary-color: #004644;
     --boder-color: #e8e8e8; 
     --header-height: 110px;
     --navbar-height: 34px;
-    --header-with-search-height: calc(var(--header-height) - var(--navbar-height) )
+    --header-with-search-height: calc(var(--header-height) - var(--navbar-height) - 20px)
 }
  
 * {
