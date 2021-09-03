@@ -953,8 +953,7 @@ html {
     margin: auto;
     padding-left: 80px;
 }
-.app-container {
-    height: 1000px;
+.head-container {
     width: 100%;
 }
 .header-product {
@@ -1039,6 +1038,7 @@ html {
 /* Content Product */
 .content-product {
     display: flex;
+    padding-bottom: 28px;
 }
 .content-product-left {
     padding-top: 12px;
@@ -1078,7 +1078,7 @@ html {
 }
 .product-specifications-list {
     list-style: none;
-    padding: 20px;
+    padding: 20px 20px 10px;
 }
 .product-specifications-item {
     line-height: 1.8;
@@ -1099,6 +1099,24 @@ html {
     color: #0168fa;
     text-decoration: none;
 }
+.content-product-policy {
+    display: flex;
+    margin-top: 15px;
+}
+.content-product-policy-item {
+    padding-right: 28px;
+}
+.content-product-policy-item-icon {
+    color: #cb1c22;
+    font-size: 18px;
+}
+.content-product-policy-item-info {
+    font-size: 1.4rem;
+    color: #444b52;
+    padding-left: 4px;
+}
+
+
 .content-product-right {
     padding-top: 30px;
     width: 585px;
@@ -1129,7 +1147,7 @@ html {
 .content-product-price-right {
     width: 100%;
     flex: 1;
-    color: #444444;
+    color: #555555;
     font-size: 1.4rem;
     text-align: right;
     line-height: 1.4;
@@ -1161,8 +1179,8 @@ html {
     justify-content: center;
 }
 .content-product-select-item1-input {
-    width: 16px;
-    height: 16px;
+    width: 15px;
+    height: 15px;
 }
 .content-product-select-item1-feature {
     display: flex;
@@ -1176,6 +1194,7 @@ html {
     color: #444b52;
     text-decoration: none;
     padding-left: 5px;
+    margin-top: -3px;
 }
 .content-product-select-item1-info {
     text-align: center;
@@ -1213,6 +1232,224 @@ html {
     font-size: 1.4rem;
     text-align: center;
     color: #495057;
+}
+.content-product-promo {
+    width: 100%;
+    background-color: #f8f9fa;
+    border:1px solid #ccc ;
+    border-radius: 2px;
+}
+.content-product-promo-title {
+    color: #212529;
+    font-size: 1.3rem;
+    font-weight: 500;
+    height: 36px;
+    border-bottom:1px solid #ccc ;
+}
+.content-product-promo-title span {
+    line-height: 36px;
+    padding-left: 12px;
+}
+.content-product-promo-list {
+    list-style: none;
+    padding-left: 12px;
+    border-bottom: 1px solid #ccc;
+}
+.content-product-promo-item {
+    padding-top: 8px;
+    display: flex;
+}
+.content-product-promo-item-input {
+    width: 14px;
+    height: 14px;
+}
+.content-product-promo-info {
+    font-size: 1.3rem;
+    color: #444b52;
+    margin-left: 5px;
+    padding: 4px 0;
+    margin-top: -4px;
+}
+.content-product-promo-more {
+    width: 100%;
+}
+.content-product-promo-more span {
+    display: inline-block;
+    color: #212529;
+    font-size: 1.3rem;
+    font-weight: 500;
+    padding: 8px;
+    background-color: #e9ecef;
+    border-bottom-right-radius: 4px;
+}
+.content-product-promo-more-list {
+    list-style: none;
+    padding-left: 12px;
+}
+.content-product-promo-more-item {
+    line-height: 1.6rem;
+}
+.content-product-promo-more-icon {
+    font-size: 14px;
+    color: #48bb78;
+}
+.content-product-promo-more-info {
+    font-size: 1.3rem;
+    color: #444b52;
+    line-height:2.4rem;
+    padding-left: 4px;
+}
+.content-product-promo-more-link {
+    font-size: 1.3rem;
+    color: #0168fa;
+    text-decoration: none;
+    padding-left: 2px;
+}
+.content-product-btn-buy {
+    width: 100%;
+    margin-top: 12px;
+}
+.content-product-btn-buy button {
+    width: 100%;
+    height: 58px;
+    background-color: #cb1c22;
+    border: none;
+    border-radius: 5px;
+}
+.content-product-btn-buy button:hover {
+    background-color: #ae1427;
+    cursor: pointer;
+}
+.content-product-btn-buy div:nth-child(1) {
+    font-size: 2rem;
+    color: var(--white-color);
+    font-weight: 400;
+}
+.content-product-btn-buy div:nth-child(2) {
+    font-size: 1.2rem;
+    color: var(--white-color);
+}
+.content-product-btn-installment {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 12px;
+}
+.content-product-btn-installment-left {
+    width: 290px;
+    height: 58px;
+    background-color: #0664f9;
+    border-radius: 5px;
+}
+.content-product-btn-installment-right {
+    width: 290px;
+    height: 58px;
+    background-color: #0664f9;
+    border-radius: 5px;
+}
+.content-product-btn-installment-right:hover {
+    background-color:  #0050d7;
+    cursor: pointer;
+}
+.content-product-btn-installment-left:hover {
+    background-color:  #0050d7;
+    cursor: pointer;
+}
+.content-product-btn-installment-right div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.content-product-btn-installment-left div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.content-product-btn-installment-left div:nth-child(1) {
+    font-size: 2rem;
+    color: var(--white-color);
+    font-weight: 400;
+    padding-top: 15px;
+}
+.content-product-btn-installment-left div:nth-child(2) {
+    font-size: 1.2rem;
+    color: var(--white-color);
+    text-align: center;
+}
+.content-product-btn-installment-right div:nth-child(1) {
+    font-size: 2rem;
+    color: var(--white-color);
+    font-weight: 400;
+    padding-top: 15px;
+}
+.content-product-btn-installment-right div:nth-child(2) {
+    font-size: 1.2rem;
+    color: var(--white-color);
+    
+}
+.content-product-help {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+.content-product-help-hotline {
+
+}
+.content-product-help-hotline-label {
+    font-size: 1.4rem;
+    color: #444b52;
+
+}
+.content-product-help-hotline-link {
+    color: #cb1c22;
+    text-decoration: none;
+    font-weight: 500;
+}
+.content-product-help-store {
+
+}
+.content-product-help-store-link {
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: #0168fa;
+}
+.line-break-content-product {
+    border-bottom:1px solid red ;
+}
+
+
+/* Body container  */
+.body-conntainer {
+    width: 100%;
+    height: 1000px;
+    padding-top: 15px;
+}
+.decription-product {
+    
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.decription-product2 {
+    width: 100%;
+    height: 1000px;
+    background-color: violet;
 }
 
 
