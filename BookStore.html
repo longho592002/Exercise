@@ -3227,29 +3227,17 @@
              </script>
 
              <script>
-                 const likeIcons = document.querySelector('.abc');
-                 const resultLikeIcon = document.querySelector('.js-like-product');
-
-                 
-                 function addLikeIcon() {
-                     resultLikeIcon.classList.add('home-product-item-action__like-item--liked')
-                 }
-                 likeIcons.addEventListener('click',addLikeIcon);
-
-                 for(const likeIcon of likeIcons) {
-                     likeIcon.addEventListener('click',addLikeIcon);
-                 }
+                 const likeIcons = document.querySelectorAll(".home-product-item-action__like-item.js-like-product > a");
+                function addLikeIcon(e) {
+                 this.classList.add("home-product-item-action__like-item--liked");
+                }
+                for (const likeIcon of likeIcons) {
+                 likeIcon.addEventListener("click", addLikeIcon);
+                }
                 
              </script>
 
-             <!-- <script>
-
-                 $(document).ready(function () {
-                     $(".home-product-item-action__like-icon-no-fill").click(function (e) { 
-                         $(".home-product-item-action__like-icon-no-fill").toggleClass(".home-product-item-action__like-icon-fill");
-                     });
-                 });
-             </script> -->
+             
           
           
 </body>

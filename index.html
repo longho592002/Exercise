@@ -3227,31 +3227,31 @@
              </script>
 
              <script>
-                 const likeIcons = document.querySelector('.abc');
-                 const resultLikeIcon = document.querySelector('.js-like-product');
+                 const likeIcons = document.querySelectorAll(".home-product-item-action__like-item.js-like-product > a");
 
-                 
-                 function addLikeIcon() {
-                     resultLikeIcon.classList.add('home-product-item-action__like-item--liked')
-                 }
-                 likeIcons.addEventListener('click',addLikeIcon);
+                // const resultLikeIcon = document.querySelectorAll(".js-like-product");
+                function addLikeIcon(e) {
+                  // console.log(e);
+                  this.classList.add("home-product-item-action__like-item--liked");
+                  // resultLikeIcon.classList.add("home-product-item-action__like-item--liked");
+                }
 
-                 for(const likeIcon of likeIcons) {
-                     likeIcon.addEventListener('click',addLikeIcon);
-                 }
-                
+                // likeIcons.addEventListener("click", addLikeIcon);
+
+                for (const likeIcon of likeIcons) {
+                  likeIcon.addEventListener("click", addLikeIcon);
+                }
              </script>
 
-             <!-- <script>
-
-                 $(document).ready(function () {
-                     $(".home-product-item-action__like-icon-no-fill").click(function (e) { 
-                         $(".home-product-item-action__like-icon-no-fill").toggleClass(".home-product-item-action__like-icon-fill");
-                     });
-                 });
-             </script> -->
-          
-          
+             <script>
+                const likeIcons = document.querySelectorAll(".home-product-item-action__like-item.js-like-product > a");
+                function addLikeIcon(e) {
+                 this.classList.add("home-product-item-action__like-item--liked");
+                }
+                for (const likeIcon of likeIcons) {
+                 likeIcon.addEventListener("click", addLikeIcon);
+                }
+             </script>
 </body>
 </html>
                                     
