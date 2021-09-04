@@ -1168,9 +1168,7 @@ html {
     text-decoration: none;
     padding: 10px;
 } 
-.content-product-select-item:nth-child(1) {
-    background-color: #edeeef;
-}
+
 .content-product-select-item:hover {
     background-color: #edeeef;
 }
@@ -1180,13 +1178,13 @@ html {
 .content-product-select-item1-input {
     width: 15px;
     height: 15px;
+    cursor: pointer;
 }
 .content-product-select-item1-feature {
     display: flex;
     justify-content: center;
     line-height: 1.6;
 }
-
 .content-product-select-item1-label {
     font-size: 1.4rem;
     font-weight: 500;
