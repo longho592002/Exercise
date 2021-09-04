@@ -1157,6 +1157,7 @@ html {
     width: 100%;
     justify-content: space-around;
     margin-top: 20px;
+    position: relative;
 }
 .content-product-select-item {
     display: flex;
@@ -1167,6 +1168,9 @@ html {
     background-color: #f8f9fa;
     text-decoration: none;
     padding: 10px;
+    position: relative;
+    
+   
 } 
 
 .content-product-select-item:hover {
@@ -1175,6 +1179,25 @@ html {
 .radio {
     justify-content: center;
 }
+.content-product-select-item label {
+    position: absolute;
+    top:0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    cursor: pointer;
+}
+.mask {
+    position: absolute;
+    top:0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    background-color:currentColor;
+    transition: 0.5s;
+}
+
 .content-product-select-item1-input {
     width: 15px;
     height: 15px;
