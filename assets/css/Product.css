@@ -846,6 +846,7 @@ html {
     transition: 0.5s;
     overflow: hidden;
     position: absolute;
+    z-index: 100;
     margin-top: 1px;
 }
 .nav-menu-item-sub {
