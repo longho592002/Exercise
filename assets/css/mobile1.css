@@ -1356,6 +1356,28 @@ html {
     border-top-left-radius: 2px;
     border-top-right-radius: 2px;
 }
+.home-product-SoldOut- {
+    
+}
+.home-product-SoldOut-info {
+    background-color: rgba(87, 70, 70,0.5);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top:0;
+    height: 190px;
+    text-align: center;
+    display: flex;
+}
+.home-product-SoldOut-info-label {
+    font-size: 2rem;
+    color: #252525;
+    display: flex;
+    margin: auto;
+    padding: 20px;
+    background-color: #858383;
+    border-radius: 50%;
+}
 .home-product-item__name {
     font-size: 1.2rem;
     font-weight: 400;
