@@ -848,6 +848,7 @@ html {
     position: absolute;
     z-index: 100;
     margin-top: 1px;
+    display:none;
 }
 .nav-menu-item-sub {
     background-color: #fff;
