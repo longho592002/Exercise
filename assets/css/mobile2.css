@@ -914,10 +914,10 @@ html {
     line-height: 30px;
     font-size: 1.3rem;
 }
-.menu-sub-item a:hover {
+.menu-sub-item:hover {
     color: #004644;
     font-weight: bold;
-}
+}    
 
 .menu-sub-item a {
     text-decoration: none;
