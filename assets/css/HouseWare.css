@@ -915,7 +915,8 @@ html {
     font-size: 1.3rem;
 }
 .menu-sub-item a:hover {
-    color: #000;
+    color: #004644;
+    font-weight: bold;
 }
 
 .menu-sub-item a {
